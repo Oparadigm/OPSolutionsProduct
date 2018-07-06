@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regression" verbose="4">
+	<test name="base">
+	<parameter name="strEnvironmentName" value="Bungo"/>
+		<packages>
+			<package name="com.innovation.regression.base.*">
+				<include name="com.innovation.regression.base.claims.regression" />
+				<include name="com.innovation.regression.base.common.regression" />
+				<include name="com.innovation.regression.base.policy.regression" />
+			</package>
+		</packages>
+	</test>
+</suite> 

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOJ>
+<namespace>
+<prefix>ws</prefix>
+<uri>http://ws.pip.crif.com/</uri>
+</namespace>
+<body>
+<!-- ****** common tags ***** -->
+<applicationId>applicationId</applicationId>
+<!-- ****** addClaim ***** -->
+<method_addClaim>addClaim</method_addClaim>
+<prefix>ws</prefix>
+<ClaimXML>claimXML</ClaimXML>
+<ClaimXMLCDATA><![CDATA[
+<DocumentInput>
+	<ApplicationData>
+		<ClaimDetails Signatory="S" RetainedCopy="1" ClaimValue="1" />
+	</ApplicationData>
+	<ClaimAndClaimantDetails>
+		<ClaimantRepresentative>
+			<CompanyDetails CompanyName="Innovation Group-CR366"
+				ContactName="Sherwood" ContactSurname="Aydrian" EmailAddress="xee@test.com"
+				ReferenceNumber="REF987" TelephoneNumber="789654321">
+				<Address AddressType="P" City="MANCHESTER" Country="United Kingdom"
+					County="Lancashire" HouseNumber="6" PostCode="M1 3ED" Street1="Minshull Street" />
+			</CompanyDetails>
+		</ClaimantRepresentative>
+		<DefendantDetails DefendantStatus="P" DefDriverName="Ashon"
+			PolicyNumberReference="POL9999" Comments="str1234" DefedantAge="20"
+			DefendandDescription="Machoman" DefendantDetailsObtained="Yes">
+			<PersonalDetails Name="Drue" MiddleName="Khan"
+				Surname="Mathilde" Sex="M" DateOfBirth="1980-01-01" TitleType="1"
+				OtherTitle="Dr">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="Minshull Street" Street2="Minshull Street"
+					HouseName="Macho" HouseNumber="20" AddressType="P" />
+			</PersonalDetails>
+			<Vehicle VRN="VEH456" Make="str1234" Model="str1234"
+				EngineSize="1234" Color="str1234" />
+			<InsurerInformation InsurerName="Innovation Group"
+				Selected="1" InsurerOrganizationID="COMP366"
+				InsurerOrganizationPath="/COMP366" InsurerType="I" />
+			<InsurerFound InsurerName="str1234" Selected="1"
+				InsurerOrganizationID="str1234" InsurerOrganizationPath="str1234"
+				InsurerType="M" />
+			<CompanyDetails CompanyName="str1234" EmailAddress="str1234"
+				ContactName="str1234" ContactMiddleName="str1234" ContactSurname="str1234"
+				TelephoneNumber="str1234" ReferenceNumber="str1234" PolicyNumber="str1234"
+				ProviderAddress="str1234">
+				<Address Country="str1234" PostCode="str1234" District="str1234"
+					County="str1234" City="str1234" Street1="str1234" Street2="str1234"
+					HouseName="str1234" HouseNumber="str1234" AddressType="P" />
+			</CompanyDetails>
+		</DefendantDetails>
+		<ClaimantDetails Occupation="Accountant" ChildClaim="0"
+			NationalInsuranceNumber="CA749721C" NINComment=""
+			AskCUEPIReference="ASKCUEPI58967">
+			<PersonalDetails Name="Sandra" MiddleName="Khilji"
+				Surname="Aydrian" Sex="M" DateOfBirth="1980-07-26" TitleType="1"
+				OtherTitle="str1234">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="str1234" City="MANCHESTER" Street1="Minshull Street" Street2="Minshull Street"
+					HouseName="Khilji" HouseNumber="12" AddressType="P" />
+			</PersonalDetails>
+			<Vehicle VRN="str1234" Make="str1234" Model="str1234"
+				EngineSize="1234" Color="str1234" />
+		</ClaimantDetails>
+	</ClaimAndClaimantDetails>
+	<MedicalDetails>
+		<Injury SoftTissue="1" BoneInjury="1" Whiplash="1" Other="1"
+			InjurySustainedDescription="Very severe injury" TimeOffRequired="1"
+			TimeOffPeriod="1234" StillOffWork="1" MedicalAttentionSeeking="1"
+			MedicalAttentionFirstDate="2018-02-15" HospitalAttendance="1"
+			OvernightDetention="1" DaysNumber="str1234" />
+		<Hospital HospitalType="0" HospitalName="MANCHESTER PRIMARY CARE EMERGENCY CENTRE" PostCode="M13 9WL">
+			<HospitalAddress AddressLine1="MANCHESTER ROYAL INFIRMARY" AddressLine2="OXFORD ROAD"
+				AddressLine3="UK" AddressLine4="MANCHESTER" />
+		</Hospital>
+		<Rehabilitation RehabilitationUndertaken="0"
+			RehabilitationTreatment="Yes" RehabilitationNeeds="1"
+			RehabilitationDetails="Other" />
+	</MedicalDetails>
+	<RepairsAndAlternativeVehicleProvision>
+		<Repairs ClaiimingDamageOwnVehicle="1" DetailsOfTheInsurance="0"
+			OtherDetails="Other" ThroughClaimantInsurer="1"
+			ThroughAlternatieCompany="1" RepairsPosition="0"
+			DefendantInsInspection="1" Location="UK" ContactDetails="Minshull Street"
+			TotalLoss="2">
+			<AlternativeCompany CompanyName="Innovation Group-CR366" Address="str1234"
+				TelephoneNumber="00441234568" ReferenceNumber="REF987" />
+		</Repairs>
+		<AlternativeVehicleProvision
+			ClaimantEntitled="1" AVRequiredByCL="1" AVProvided="1" HireNeed="1"
+			AVRequiredByCR="1" VehicleType="Car" ContactName="Apollo"
+			TelephoneNumber="str1234">
+			<Provider ProviderName="Apollo" ReferenceNumber="str1234"
+				ProviderAddress="Minshull Street" StartDate="2014-01-01" EndDate="2025-01-0">
+				<Vehicle VRN="BRN012" Make="Toyata" Model="Cerina"
+					EngineSize="1234" Color="Red" />
+			</Provider>
+		</AlternativeVehicleProvision>
+	</RepairsAndAlternativeVehicleProvision>
+	<AccidentData>
+		<AccidentDetails ClaimantType="0" OtherType="str1234"
+			OccupantsNumber="1234" Seatbelt="0" DriverIsDefendant="1"
+			AccidentDate="2018-02-15" AccidentTime="09:00" AccidentLocation="str1234"
+			AccidentDescription="Brief description of accident" PoliceReported="1">
+			<Driver Name="Aslam" MiddleName="Jan" Surname="Khan">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="str1234" City="MANCHESTER" Street1="str1234" Street2="str1234"
+					HouseName="str1234" HouseNumber="str1234" AddressType="P" />
+			</Driver>
+			<Owner Name="Muhammad" MiddleName="Tafseer" Surname="Haider">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="Minshull Street" Street2="Minshull Street"
+					HouseName="Haider" HouseNumber="14" AddressType="P" />
+			</Owner>
+			<Vehicle VRN="STRN14" Make="Honda" Model="BMW"
+				EngineSize="1234" Color="Black" />
+			<InsuranceCompanyInformatiion
+				CompanyName="str1234" PolicyNumber="str1234">
+				<Address Country="str1234" PostCode="str1234" District="str1234"
+					County="str1234" City="str1234" Street1="str1234" Street2="str1234"
+					HouseName="str1234" HouseNumber="str1234" AddressType="P" />
+			</InsuranceCompanyInformatiion>
+			<WeatherConditions Sun="1" Rain="1" Snow="1" Ice="1"
+				Fog="1" Other="1" OtherDetails="str1234" />
+			<RoadConditions Dry="1" Wet="1" Snow="1" Ice="1" Mud="1"
+				Oil="1" Other="1" OtherDetails="str1234" />
+			<AccidentCircumstances VhclHitSideRoad="1"
+				VhclHitInRear="1" VhclHitWhilstParked="1" AccidCarPark="1"
+				AccidRoundabout="1" AccidChangingLanes="1" ConcertinaCollision="1"
+				Other="1" />
+			<PoliceDetails StationName="str1234" StationAddress="str1234"
+				ReportingOfficerName="str1234" ReferenceNumber="str1234" />
+		</AccidentDetails>
+		<BusCoach BussOrCoach="1" DriverName="str1234" DriverID="str1234"
+			DriverDescription="str1234" VehicleDescription="str1234"
+			NumberOfPassengers="1234" Evidence="1" Comments="str1234" />
+	</AccidentData>
+	<OtherPartyDetails>
+		<OtherParty OPType="W" OPOther="str1234">
+			<PersonalDetails TitleType="1" Name="Kyden"
+				MiddleName="Padma" Surname="Bader" OtherTitle="Mr">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="inshull Street" Street2="inshull Street"
+					HouseName="Padma" HouseNumber="10" AddressType="P" />
+			</PersonalDetails>
+			<VihicleInformation VRN="WT456Y" Make="Toyota"
+				Model="Carina" EngineSize="1234" Color="Red" />
+			<InsuranceCompanyInformatiion
+				CompanyName="WCOMP" PolicyNumber="WPOL45677">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="inshull Street" Street2="inshull Street"
+					HouseName="Wehla" HouseNumber="5" AddressType="P" />
+			</InsuranceCompanyInformatiion>
+		</OtherParty>
+	</OtherPartyDetails>
+	<LiabilityFunding>
+		<Liability DefendantResponsability="Liability"
+			OP1Responsability="1" OP2Responsability="1" OP3Responsability="1"
+			OP4Responsability="1" OP5Responsability="1" OP6Responsability="1" />
+		<Funding FundingUndertaken="1" Section58="1"
+			ConditionalFeeDate="2018-02-16" Section29="1" ICName="Innovation"
+			ICAddress="Address of Insurance company" PolicyNumber="POLINS46546" PolicyDate="2017-12-01"
+			LevelOfCover="Comprehensive" PremiumsStaged="1" IncreasingPoint="str1234"
+			MembershipOrganisation="1" OrganizationName="Innovation" AgreementDate="2017-12-01"
+			Ohter="1" OtherDetails="Other" ConsideredFreeLegalExpIns="1"
+			Comments="Liability Comments" />
+	</LiabilityFunding>
+</DocumentInput>]]>
+</ClaimXMLCDATA>
+
+<!-- ****** addChildClaim ***** -->
+<method_addClaim>addClaim</method_addClaim>
+<prefix>ws</prefix>
+<ClaimXML>claimXML</ClaimXML>
+<ChildClaimCDATA><![CDATA[
+<DocumentInput>
+	<ApplicationData>
+		<ClaimDetails Signatory="S" RetainedCopy="1" ClaimValue="1" />
+	</ApplicationData>
+	<ClaimAndClaimantDetails>
+		<ClaimantRepresentative>
+			<CompanyDetails CompanyName="Innovation Group-CR366"
+				ContactName="Sherwood" ContactSurname="Aydrian" EmailAddress="xee@test.com"
+				ReferenceNumber="REF987" TelephoneNumber="789654321">
+				<Address AddressType="P" City="MANCHESTER" Country="United Kingdom"
+					County="Lancashire" HouseNumber="6" PostCode="M1 3ED" Street1="Minshull Street" />
+			</CompanyDetails>
+		</ClaimantRepresentative>
+		<DefendantDetails DefendantStatus="P" DefDriverName="Ashon"
+			PolicyNumberReference="POL9999" Comments="str1234" DefedantAge="20"
+			DefendandDescription="Machoman" DefendantDetailsObtained="Yes">
+			<PersonalDetails Name="Drue" MiddleName="Khan"
+				Surname="Mathilde" Sex="M" DateOfBirth="1980-01-01" TitleType="1"
+				OtherTitle="Dr">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="Minshull Street" Street2="Minshull Street"
+					HouseName="Macho" HouseNumber="20" AddressType="P" />
+			</PersonalDetails>
+			<Vehicle VRN="VEH456" Make="str1234" Model="str1234"
+				EngineSize="1234" Color="str1234" />
+			<InsurerInformation InsurerName="Innovation Group"
+				Selected="1" InsurerOrganizationID="COMP366"
+				InsurerOrganizationPath="/COMP366" InsurerType="I" />
+			<InsurerFound InsurerName="str1234" Selected="1"
+				InsurerOrganizationID="str1234" InsurerOrganizationPath="str1234"
+				InsurerType="M" />
+			<CompanyDetails CompanyName="str1234" EmailAddress="str1234"
+				ContactName="str1234" ContactMiddleName="str1234" ContactSurname="str1234"
+				TelephoneNumber="str1234" ReferenceNumber="str1234" PolicyNumber="str1234"
+				ProviderAddress="str1234">
+				<Address Country="str1234" PostCode="str1234" District="str1234"
+					County="str1234" City="str1234" Street1="str1234" Street2="str1234"
+					HouseName="str1234" HouseNumber="str1234" AddressType="P" />
+			</CompanyDetails>
+		</DefendantDetails>
+		<ClaimantDetails Occupation="Accountant" ChildClaim="1"
+			NationalInsuranceNumber="CA749721C" NINComment=""
+			AskCUEPIReference="ASKCUEPI58967">
+			<PersonalDetails Name="Quint" MiddleName="Kim"
+				Surname="Ahouja" Sex="M" DateOfBirth="2010-01-01" TitleType="1"
+				OtherTitle="str1234">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="str1234" City="MANCHESTER" Street1="Minshull Street" Street2="Minshull Street"
+					HouseName="Khilji" HouseNumber="12" AddressType="P" />
+			</PersonalDetails>
+			<Vehicle VRN="str1234" Make="str1234" Model="str1234"
+				EngineSize="1234" Color="str1234" />
+		</ClaimantDetails>
+	</ClaimAndClaimantDetails>
+	<MedicalDetails>
+		<Injury SoftTissue="1" BoneInjury="1" Whiplash="1" Other="1"
+			InjurySustainedDescription="Very severe injury" TimeOffRequired="1"
+			TimeOffPeriod="1234" StillOffWork="1" MedicalAttentionSeeking="1"
+			MedicalAttentionFirstDate="2018-02-15" HospitalAttendance="1"
+			OvernightDetention="1" DaysNumber="str1234" />
+		<Hospital HospitalType="0" HospitalName="MANCHESTER PRIMARY CARE EMERGENCY CENTRE" PostCode="M13 9WL">
+			<HospitalAddress AddressLine1="MANCHESTER ROYAL INFIRMARY" AddressLine2="OXFORD ROAD"
+				AddressLine3="UK" AddressLine4="MANCHESTER" />
+		</Hospital>
+		<Rehabilitation RehabilitationUndertaken="0"
+			RehabilitationTreatment="Yes" RehabilitationNeeds="1"
+			RehabilitationDetails="Other" />
+	</MedicalDetails>
+	<RepairsAndAlternativeVehicleProvision>
+		<Repairs ClaiimingDamageOwnVehicle="1" DetailsOfTheInsurance="0"
+			OtherDetails="Other" ThroughClaimantInsurer="1"
+			ThroughAlternatieCompany="1" RepairsPosition="0"
+			DefendantInsInspection="1" Location="UK" ContactDetails="Minshull Street"
+			TotalLoss="2">
+			<AlternativeCompany CompanyName="Innovation Group-CR366" Address="str1234"
+				TelephoneNumber="00441234568" ReferenceNumber="REF987" />
+		</Repairs>
+		<AlternativeVehicleProvision
+			ClaimantEntitled="1" AVRequiredByCL="1" AVProvided="1" HireNeed="1"
+			AVRequiredByCR="1" VehicleType="Car" ContactName="Apollo"
+			TelephoneNumber="str1234">
+			<Provider ProviderName="Apollo" ReferenceNumber="str1234"
+				ProviderAddress="Minshull Street" StartDate="2014-01-01" EndDate="2025-01-0">
+				<Vehicle VRN="BRN012" Make="Toyata" Model="Cerina"
+					EngineSize="1234" Color="Red" />
+			</Provider>
+		</AlternativeVehicleProvision>
+	</RepairsAndAlternativeVehicleProvision>
+	<AccidentData>
+		<AccidentDetails ClaimantType="0" OtherType="str1234"
+			OccupantsNumber="1234" Seatbelt="0" DriverIsDefendant="1"
+			AccidentDate="2018-02-15" AccidentTime="09:00" AccidentLocation="str1234"
+			AccidentDescription="Brief description of accident" PoliceReported="1">
+			<Driver Name="Aslam" MiddleName="Jan" Surname="Khan">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="str1234" City="MANCHESTER" Street1="str1234" Street2="str1234"
+					HouseName="str1234" HouseNumber="str1234" AddressType="P" />
+			</Driver>
+			<Owner Name="Muhammad" MiddleName="Tafseer" Surname="Haider">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="Minshull Street" Street2="Minshull Street"
+					HouseName="Haider" HouseNumber="14" AddressType="P" />
+			</Owner>
+			<Vehicle VRN="STRN14" Make="Honda" Model="BMW"
+				EngineSize="1234" Color="Black" />
+			<InsuranceCompanyInformatiion
+				CompanyName="str1234" PolicyNumber="str1234">
+				<Address Country="str1234" PostCode="str1234" District="str1234"
+					County="str1234" City="str1234" Street1="str1234" Street2="str1234"
+					HouseName="str1234" HouseNumber="str1234" AddressType="P" />
+			</InsuranceCompanyInformatiion>
+			<WeatherConditions Sun="1" Rain="1" Snow="1" Ice="1"
+				Fog="1" Other="1" OtherDetails="str1234" />
+			<RoadConditions Dry="1" Wet="1" Snow="1" Ice="1" Mud="1"
+				Oil="1" Other="1" OtherDetails="str1234" />
+			<AccidentCircumstances VhclHitSideRoad="1"
+				VhclHitInRear="1" VhclHitWhilstParked="1" AccidCarPark="1"
+				AccidRoundabout="1" AccidChangingLanes="1" ConcertinaCollision="1"
+				Other="1" />
+			<PoliceDetails StationName="str1234" StationAddress="str1234"
+				ReportingOfficerName="str1234" ReferenceNumber="str1234" />
+		</AccidentDetails>
+		<BusCoach BussOrCoach="1" DriverName="str1234" DriverID="str1234"
+			DriverDescription="str1234" VehicleDescription="str1234"
+			NumberOfPassengers="1234" Evidence="1" Comments="str1234" />
+	</AccidentData>
+	<OtherPartyDetails>
+		<OtherParty OPType="W" OPOther="str1234">
+			<PersonalDetails TitleType="1" Name="Kyden"
+				MiddleName="Padma" Surname="Bader" OtherTitle="Mr">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="inshull Street" Street2="inshull Street"
+					HouseName="Padma" HouseNumber="10" AddressType="P" />
+			</PersonalDetails>
+			<VihicleInformation VRN="WT456Y" Make="Toyota"
+				Model="Carina" EngineSize="1234" Color="Red" />
+			<InsuranceCompanyInformatiion
+				CompanyName="WCOMP" PolicyNumber="WPOL45677">
+				<Address Country="United Kingdom" PostCode="M1 3ED" District="MANCHESTER"
+					County="Lancashire" City="MANCHESTER" Street1="inshull Street" Street2="inshull Street"
+					HouseName="Wehla" HouseNumber="5" AddressType="P" />
+			</InsuranceCompanyInformatiion>
+		</OtherParty>
+	</OtherPartyDetails>
+	<LiabilityFunding>
+		<Liability DefendantResponsability="Liability"
+			OP1Responsability="1" OP2Responsability="1" OP3Responsability="1"
+			OP4Responsability="1" OP5Responsability="1" OP6Responsability="1" />
+		<Funding FundingUndertaken="1" Section58="1"
+			ConditionalFeeDate="2018-02-16" Section29="1" ICName="Innovation"
+			ICAddress="Address of Insurance company" PolicyNumber="POLINS46546" PolicyDate="2017-12-01"
+			LevelOfCover="Comprehensive" PremiumsStaged="1" IncreasingPoint="str1234"
+			MembershipOrganisation="1" OrganizationName="Innovation" AgreementDate="2017-12-01"
+			Ohter="1" OtherDetails="Other" ConsideredFreeLegalExpIns="1"
+			Comments="Liability Comments" />
+	</LiabilityFunding>
+</DocumentInput>]]>
+</ChildClaimCDATA>
+
+<!-- ****** getClaim ***** -->
+<method_getClaim>getClaim</method_getClaim>
+<!-- ****** getClaimsStatus ***** -->
+<method_getClaimsStatus>getClaimsStatus</method_getClaimsStatus>
+<!-- ****** acknowledgeLiabilityAdmitted ***** -->
+<method_acknowledgeLiabilityAdmitted>acknowledgeLiabilityAdmitted</method_acknowledgeLiabilityAdmitted>
+<!-- ****** setInterimPaymentNeeded ***** -->
+<method_setInterimPaymentNeeded>setInterimPaymentNeeded</method_setInterimPaymentNeeded>
+<isInterimPaymentNeeded>isInterimPaymentNeeded</isInterimPaymentNeeded>
+<!-- ****** setStage2SPFCounterOfferNeeded ***** -->
+<method_setStage2SPFCounterOfferNeeded>setStage2SPFCounterOfferNeeded</method_setStage2SPFCounterOfferNeeded>
+<isStage2SPFCounterOfferNeeded>isStage2SPFCounterOfferNeeded</isStage2SPFCounterOfferNeeded>
+<!-- ****** setStage2SPFAgreementDecision ***** -->
+<method_setStage2SPFAgreementDecision>setStage2SPFAgreementDecision</method_setStage2SPFAgreementDecision>
+<isAgreed>isAgreed</isAgreed>
+<!-- ****** setAdditionalDamagesExistence ***** -->
+<method_setAdditionalDamagesExistence>setAdditionalDamagesExistence</method_setAdditionalDamagesExistence>
+<additionalDamagesExist>additionalDamagesExist</additionalDamagesExist>
+<!-- ****** AddInterimSPFRequest ***** -->
+<method_AddInterimSPFRequest>addInterimSPFRequest</method_AddInterimSPFRequest>
+<claimData>claimData</claimData>
+<activityEngineGuid>activityEngineGuid</activityEngineGuid>
+<ISPFRequestXML>ISPFRequestXML</ISPFRequestXML>
+<ISPFRequestXMLCDATA><![CDATA[
+<InterimSettlementPackRequest>
+  <ClaimantRepresentative>
+    <CompanyDetails ContactName="str1234" ContactMiddleName="str1234" ContactSurname="str1234" EmailAddress="str1234" ReferenceNumber="str1234" TelephoneNumber="str1234" />
+    <MedCoCase SoftTissue="1" MedCoCaseID="123/1" />
+  </ClaimantRepresentative>
+  <MedicalReport MedicalReportStage2_1="0" />
+  <InterimPayment>
+    <ClaimantRequestForInterimPayment ReasonsForInterimPaymentRequest="str1234" />
+  </InterimPayment>
+  <ClaimantLosses>
+    <ClaimantLossesToDate LossType="11" EvidenceAttached="1" Comments="str1234" GrossValueClaimed="1230.45" PercContribNegDeductions="0" ItemBeingPursued="1" />
+  </ClaimantLosses>
+  <StatementOfTruth RetainedSignedCopy="1" SignatoryType="S" />
+</InterimSettlementPackRequest>]]>
+</ISPFRequestXMLCDATA>
+<!-- ****** AddStage2SPFRequest ***** -->
+<method_AddStage2SPFRequest>addStage2SPFRequest</method_AddStage2SPFRequest>
+<S2SPFRequestXML>S2SPFRequestXML</S2SPFRequestXML>
+<S2SPFRequestXMLCDATA><![CDATA[
+<Stage2SettlementPackRequest>
+ <ClaimantRepresentative ContactName="string" ContactMiddleName="string" ContactSurname="string" EmailAddress="string@string.com" ReferenceNumber="45" TelephoneNumber="5646546">
+ <MedCoCase SoftTissue="0"  />
+ </ClaimantRepresentative>
+     <MedicalReport MedicalReportStage2="0"/>
+  <ClaimantLosses>
+    <!--0 to 15 repetitions:-->
+    <CurrentClaimantOffer LossType="11" EvidenceAttached="1" Comments="string" GrossValueClaimed="1000.00" PercContribNegDeductions="100.00" Interest="1000.00000000000"/>
+  </ClaimantLosses>
+  <StatementOfTruth RetainedSignedCopy="1" SignatoryType="S"/>
+  <!--Optional:-->
+  <AgreementData Comments="string"/>
+</Stage2SettlementPackRequest>]]>
+</S2SPFRequestXMLCDATA>
+<!-- ****** AddS2SPFAdditionalDamagesRequest ***** -->
+<method_AddS2SPFAdditionalDamagesRequest>addS2SPFAdditionalDamagesRequest</method_AddS2SPFAdditionalDamagesRequest>
+<additionalDamagesRequestXML>additionalDamagesRequestXML</additionalDamagesRequestXML>
+<additionalDamagesRequestXMLCDATA><![CDATA[
+<Stage2SettlementPackAdditionalDamagesRequest>
+  <ClaimantLosses>
+    <CurrentClaimantOffer LossType="1" EvidenceAttached="0" Comments="Comments" GrossValueClaimed="123.45" PercContribNegDeductions="1" Interest="0" />
+  </ClaimantLosses>
+  <AgreementData>
+    <FinalAgreementDetails>
+      <AgreementDetails GrossAmount="123.45" InterimPaymentAmount="123.45" Comments="Additional Comments" />
+    </FinalAgreementDetails>
+  </AgreementData>
+</Stage2SettlementPackAdditionalDamagesRequest>]]>
+</additionalDamagesRequestXMLCDATA>
+</body>
+</MOJ>
