@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+   <user1>>
+      <username>SELENIUM001</username>
+      <password>password</password>
+   </user1>
+   <user2>>
+      <username>SELENIUM002</username>
+      <password>password</password>
+   </user2>   
+   <user3>>
+      <username>SELENIUM003</username>
+      <password>password</password>
+   </user3>      
+    <user4>>
+      <username>SELENIUM004</username>
+      <password>password</password>
+   </user4>  
+   <user5>>
+      <username>SELENIUM005</username>
+      <password>password</password>
+   </user5>  
+   <user6>>
+      <username>SELENIUM006</username>
+      <password>password</password>
+   </user6>  
+   <user7>>
+      <username>SELENIUM007</username>
+      <password>password</password>
+   </user7>  
+   <user8>>
+      <username>SELENIUM008</username>
+      <password>password</password>
+   </user8>
+   <user9>>
+      <username>SELENIUM009</username>
+      <password>password</password>
+   </user9>    
+</users>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WSM>
+	<Java8>
+		<URL1>http://34.248.25.64:9080/WebServicesModule/ClientQuotePolicyList?wsdl</URL1>
+		<URL2>http://34.248.25.64:9080/WebServicesModule/GetLookupValues?wsdl</URL2>
+		<URL3>http://34.248.25.64:9080/WebServicesModule/LOBRetrieve?wsdl</URL3>
+		<URL4>http://34.248.25.64:9080/WebServicesModule/BillingPlanList?wsdl</URL4>
+		<URL5>http://34.248.25.64:9080/WebServicesModule/PolicyQuoteView?wsdl</URL5>
+	</Java8>	
+	<Bungo>
+		<URL1>http://10.2.64.3:9080/WebServicesModule/ClientQuotePolicyList?wsdl</URL1>
+		<URL2>http://10.2.64.3:9080/WebServicesModule/GetLookupValues?wsdl</URL2>
+		<URL3>http://10.2.64.3:9080/WebServicesModule/LOBRetrieve?wsdl</URL3>
+		<URL4>http://10.2.64.3:9080/WebServicesModule/BillingPlanList?wsdl</URL4>
+		<URL5>http://10.2.64.3:9080/WebServicesModule/PolicyQuoteView?wsdl</URL5>
+	</Bungo>		
+</WSM>
