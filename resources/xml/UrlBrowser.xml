@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+   <BaseDevelopment>>
+      <Browser>CHROME</Browser>
+      <URL>http://10.2.64.3:9080/Jasper/</URL>
+      <Database>BaseDevelopment</Database>
+   </BaseDevelopment>
+   <BaseDailyDeploy>>
+      <Browser>CHROME</Browser>
+      <URL>http://10.2.64.11:9080/Jasper/</URL>
+      <Database>BaseDailyDeploy</Database>
+   </BaseDailyDeploy>
+   <BaseSystemTest>>
+      <Browser>CHROME</Browser>
+      <URL>http://10.2.64.4:9080/Jasper/</URL>
+      <Database>BaseSystemTest</Database>
+   </BaseSystemTest>
+    <Thor>>
+      <Browser>CHROME</Browser>
+      <URL>http://10.2.64.12:9080/Jasper/</URL>
+      <Database>Thor</Database>
+   </Thor>
+    <Athena>>
+      <Browser>CHROME</Browser>
+      <URL>http://52.31.34.80:9082/Jasper/</URL>
+      <Database>Athena</Database>
+   </Athena>        
+    <SDLCTest>
+      <Browser>CHROME</Browser>
+      <URL>http://sdlc04.1insurer.cloud:9080/Jasper/</URL>
+      <Database>sdlc03</Database>
+     </SDLCTest>
+   <Environment3>>
+      <Browser>CHROME</Browser>
+      <URL>http://10.2.64.3:9080/Jasper/</URL>
+      <Database>Bungo</Database>
+  </Environment3>
+    <Java8>>
+      <Browser>CHROME</Browser>
+      <URL>http://34.248.173.154:9080/Jasper/</URL>
+      <Database>Java8</Database>
+  </Java8>   
+  
+      
+</Setup>

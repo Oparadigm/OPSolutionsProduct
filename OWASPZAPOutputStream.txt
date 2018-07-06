@@ -1,0 +1,205 @@
+0 [main] INFO org.zaproxy.zap.GuiBootstrap  - OWASP ZAP 2.7.0 started 19/06/18 18:55:26 with home C:\Users\mahmoodk\OWASP ZAP\
+79 [AWT-EventQueue-0] INFO org.parosproxy.paros.network.SSLConnector  - Reading supported SSL/TLS protocols...
+79 [AWT-EventQueue-0] INFO org.parosproxy.paros.network.SSLConnector  - Using a SSLEngine...
+136 [AWT-EventQueue-0] INFO org.parosproxy.paros.network.SSLConnector  - Done reading supported SSL/TLS protocols: [SSLv2Hello, SSLv3, TLSv1, TLSv1.1, TLSv1.2]
+146 [AWT-EventQueue-0] INFO org.parosproxy.paros.extension.option.OptionsParamCertificate  - Unsafe SSL renegotiation disabled.
+472 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - open start - state not modified
+595 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - dataFileCache open start
+608 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - dataFileCache open end
+879 [AWT-EventQueue-0] INFO org.parosproxy.paros.view.View  - Initialising View
+2009 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.control.ExtensionFactory  - Loading extensions
+2094 [ZAP-BootstrapGUI] ERROR org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate  - Unable to load the configuration
+org.apache.commons.configuration.ConfigurationException: Unable to load the configuration
+	at org.apache.commons.configuration.XMLConfiguration.load(XMLConfiguration.java:955)
+	at org.apache.commons.configuration.XMLConfiguration.load(XMLConfiguration.java:908)
+	at org.apache.commons.configuration.XMLConfiguration$XMLFileConfigurationDelegate.load(XMLConfiguration.java:1583)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:324)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:261)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:238)
+	at org.apache.commons.configuration.AbstractHierarchicalFileConfiguration.load(AbstractHierarchicalFileConfiguration.java:184)
+	at org.zaproxy.zap.utils.ZapXmlConfiguration.<init>(ZapXmlConfiguration.java:88)
+	at org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate.getPreviousVersionInfo(ExtensionAutoUpdate.java:883)
+	at org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate.initialize(ExtensionAutoUpdate.java:170)
+	at org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate.<init>(ExtensionAutoUpdate.java:158)
+	at org.zaproxy.zap.control.CoreFunctionality.createExtensions(CoreFunctionality.java:81)
+	at org.zaproxy.zap.control.CoreFunctionality.getBuiltInExtensions(CoreFunctionality.java:60)
+	at org.zaproxy.zap.control.ExtensionFactory.loadAllExtension(ExtensionFactory.java:107)
+	at org.parosproxy.paros.control.Control.addExtension(Control.java:160)
+	at org.parosproxy.paros.control.AbstractControl.loadExtension(AbstractControl.java:53)
+	at org.parosproxy.paros.control.Control.init(Control.java:123)
+	at org.parosproxy.paros.control.Control.initSingletonWithView(Control.java:299)
+	at org.zaproxy.zap.GuiBootstrap.initControlAndPostViewInit(GuiBootstrap.java:257)
+	at org.zaproxy.zap.GuiBootstrap.access$100(GuiBootstrap.java:70)
+	at org.zaproxy.zap.GuiBootstrap$2.run(GuiBootstrap.java:200)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Invalid byte 2 of 3-byte UTF-8 sequence.
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:408)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1551)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2821)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.commons.configuration.XMLConfiguration.load(XMLConfiguration.java:942)
+	... 21 more
+3008 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.control.ExtensionFactory  - Installed add-ons: [[id=alertFilters, version=7.0.0], [id=ascanrules, version=31.0.0], [id=bruteforce, version=7.0.0], [id=coreLang, version=13.0.0], [id=diff, version=8.0.0], [id=directorylistv1, version=3.0.0], [id=fuzz, version=10.0.0], [id=gettingStarted, version=9.0.0], [id=help, version=8.0.0], [id=importurls, version=5.0.0], [id=invoke, version=9.0.0], [id=jxbrowser, version=9.0.0], [id=jxbrowserwindows, version=7.0.0], [id=onlineMenu, version=6.0.0], [id=pscanrules, version=22.0.0], [id=quickstart, version=23.0.0], [id=replacer, version=6.0.0], [id=reveal, version=2.0.0], [id=saverawmessage, version=4.0.0], [id=scripts, version=24.0.0], [id=selenium, version=13.0.0], [id=spiderAjax, version=21.0.0], [id=tips, version=6.0.0], [id=webdriverwindows, version=6.0.0], [id=websocket, version=16.0.0], [id=zest, version=27.0.0]]
+3423 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.control.ExtensionFactory  - Extensions loaded
+3694 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Change user agent to other browsers. 
+3695 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Detect insecure or potentially malicious content in HTTP responses.
+3695 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Detect and alert 'Set-cookie' attempt in HTTP response for modification.
+3695 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Avoid browser cache (strip off IfModifiedSince)
+3695 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Log cookies sent by browser.
+3695 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Log unique GET queries into file:filter\get.xls
+3695 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Log unique POST queries into file:  filter\post.xls
+3697 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Log request and response into file: filter\message.txt
+3697 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Replace HTTP request body using defined pattern.
+3697 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Replace HTTP request header using defined pattern.
+3697 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Replace HTTP response body using defined pattern.
+3698 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Replace HTTP response header using defined pattern.
+3698 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.filter.FilterFactory  - loaded filter Send ZAP session request ID
+4263 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows ZAP to check for updates
+4349 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Options Extension
+4801 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Edit Menu Extension
+4823 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Filter Extension
+4835 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides a rest based API for controlling and accessing ZAP
+4900 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Session State Extension
+4902 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Report Extension
+4915 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing History Extension
+5043 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Show hidden fields and enable disabled fields
+5062 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Search messages for strings and regular expressions
+5177 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Encode/Decode/Hash...
+5186 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to intercept and modify requests and responses
+5383 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Passive scanner
+5464 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Script Passive Scan Rules
+5464 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Stats Passive Scan Rule
+5465 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Application Error Disclosure
+5465 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Incomplete or No Cache-control and Pragma HTTP Header Set
+5465 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Content-Type Header Missing
+5466 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Cookie No HttpOnly Flag
+5466 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Cookie Without Secure Flag
+5467 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+5467 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Web Browser XSS Protection Not Enabled
+5468 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Secure Pages Include Mixed Content
+5468 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Private IP Disclosure
+5469 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: Session ID in URL Rewrite
+5470 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: X-Content-Type-Options Header Missing
+5470 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.pscan.ExtensionPassiveScan  - loaded passive scan rule: X-Frame-Options Header Scanner
+5529 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to view and manage alerts
+5658 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+5832 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Spider used for automatically finding URIs on a site
+5979 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing A set of common popup menus for miscellaneous tasks
+6003 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Forced browsing of files and directories using code from the OWASP DirBuster tool
+6069 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Manual Request Editor Extension
+6071 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Compares 2 sessions and generates an HTML file showing the differences
+6076 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Invoke external applications passing context related information such as URLs and parameters
+6110 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Handles anti cross site request forgery (CSRF) tokens
+6129 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Authentication Extension
+6149 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.authentication.ExtensionAuthentication  - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication]
+6158 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Creates a dynamic SSL certificate to allow SSL communications to be intercepted without warnings being generated by the browser
+6186 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Logs errors to the Output tab in development mode only
+6190 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Users Extension
+6194 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Summarise and analyse FORM and URL parameters as well as cookies
+6219 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Script integration
+6251 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Scripting console, supports all JSR 223 scripting languages
+6746 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Forced User Extension
+6759 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Extension handling HTTP sessions
+6841 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Zest is a specialized scripting language from Mozilla specifically designed to be used in security tools
+7166 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionDiff
+7174 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Post Table View Extension
+7249 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Session Management Extension
+7251 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.sessions.ExtensionSessionManagement  - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management]
+7253 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Form Table View Extension
+7284 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Capture messages from WebSockets with the ability to set breakpoints.
+7509 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to import a file containing URLs which ZAP will access, adding them to the Sites tree
+7514 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Core UI related functionality.
+7517 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Authorization Extension
+7521 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing AJAX Spider, uses Crawljax
+7603 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+7622 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Manages the local proxy configurations
+7771 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Handles adding Global Excluded URLs
+7798 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Adds menu item to refresh the Sites tree
+7807 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+7817 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.keyboard.ExtensionKeyboard  - Initializing keyboard shortcuts
+7818 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing OWASP ZAP User Guide
+7833 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides a URL suitable for calling from target sites
+7951 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows you to configure which extensions are loaded when ZAP starts
+7981 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Combined HTTP Panels Extension
+8022 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Hex View Extension
+8073 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Image View Extension
+8082 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Large Request View Extension
+8096 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Large Response View Extension
+8113 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Query Table View Extension
+8165 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing HTTP Panel Syntax Highlighter View Extension
+8300 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Active and passive rule configuration
+8315 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Statistics
+8330 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.stats.ExtensionStats  - Start recording in memory stats
+8331 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+8345 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows to fuzz HTTP messages.
+8406 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing The Online menu links
+8414 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionSaveRawHttpMessage
+8422 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Tips and Tricks
+8427 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Context alert rules filter
+8434 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Active Scan Rules
+8438 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Translations of the core language files
+8442 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing The ZAP Getting Started Guide
+8446 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionJxBrowser
+8451 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtensionJxBrowserWindows
+8456 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing ExtSelJxBrowserWindows
+8468 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Passive Scan Rules
+8469 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Quick Start panel 
+8499 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Launch browsers proxying through ZAP
+8513 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Easy way to replace strings in requests and responses
+8528 [ZAP-BootstrapGUI] INFO org.parosproxy.paros.extension.ExtensionLoader  - Initializing Allows to fuzz WebSocket messages.
+9267 [ZAP-BootstrapGUI] INFO org.zaproxy.zap.extension.callback.ExtensionCallback  - Started callback server on 0.0.0.0:5254
+9691 [AWT-EventQueue-0] INFO org.parosproxy.paros.control.Control  - New Session
+9705 [AWT-EventQueue-0] INFO org.parosproxy.paros.control.Control  - Create and Open Untitled Db
+9723 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - dataFileCache commit start
+9727 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - dataFileCache commit end
+9757 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - Database closed
+9929 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - open start - state not modified
+10046 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - dataFileCache open start
+10146 [AWT-EventQueue-0] INFO hsqldb.db..ENGINE  - dataFileCache open end
+10472 [Thread-9] INFO hsqldb.db..ENGINE  - dataFileCache commit start
+10488 [Thread-9] INFO hsqldb.db..ENGINE  - dataFileCache commit end
+10542 [Thread-9] INFO hsqldb.db..ENGINE  - Database closed
+10685 [Thread-9] INFO hsqldb.db..ENGINE  - open start - state not modified
+10693 [Thread-9] INFO hsqldb.db..ENGINE  - dataFileCache open start
+10696 [Thread-9] INFO hsqldb.db..ENGINE  - dataFileCache open end
+10972 [ZAP-BootstrapGUI] ERROR org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate  - Unable to load the configuration
+org.apache.commons.configuration.ConfigurationException: Unable to load the configuration
+	at org.apache.commons.configuration.XMLConfiguration.load(XMLConfiguration.java:955)
+	at org.apache.commons.configuration.XMLConfiguration.load(XMLConfiguration.java:908)
+	at org.apache.commons.configuration.XMLConfiguration$XMLFileConfigurationDelegate.load(XMLConfiguration.java:1583)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:324)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:261)
+	at org.apache.commons.configuration.AbstractFileConfiguration.load(AbstractFileConfiguration.java:238)
+	at org.apache.commons.configuration.AbstractHierarchicalFileConfiguration.load(AbstractHierarchicalFileConfiguration.java:184)
+	at org.zaproxy.zap.utils.ZapXmlConfiguration.<init>(ZapXmlConfiguration.java:88)
+	at org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate.getPreviousVersionInfo(ExtensionAutoUpdate.java:883)
+	at org.zaproxy.zap.extension.autoupdate.ExtensionAutoUpdate.alertIfNewVersions(ExtensionAutoUpdate.java:639)
+	at org.zaproxy.zap.GuiBootstrap$2.run(GuiBootstrap.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: Invalid byte 2 of 3-byte UTF-8 sequence.
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:408)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1551)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2821)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.commons.configuration.XMLConfiguration.load(XMLConfiguration.java:942)
+	... 11 more
+2484819 [Thread-11] INFO hsqldb.db..ENGINE  - dataFileCache commit start
+2484827 [Thread-11] INFO hsqldb.db..ENGINE  - dataFileCache commit end
+2484859 [Thread-11] INFO hsqldb.db..ENGINE  - Database closed
+2484961 [Thread-11] INFO org.zaproxy.zap.extension.api.CoreAPI  - OWASP ZAP 2.7.0 terminated.

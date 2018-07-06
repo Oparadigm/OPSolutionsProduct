@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoggerConfiguration>
+	<Port>9876</Port>
+	<!-- The logging code file path is controlled through the Log4j.xml, just added a node in the xml in case this changes -->
+	<LogDirectory>c:/temp/logs/</LogDirectory>
+	<!-- If you change the path, make sure it exists first on the host machine! -->
+	<!-- This wont create the directories if they do not exist! -->
+	<LoggingServerDirectory>c:/temp/logs/</LoggingServerDirectory>
+	<!-- Dont add the file extension, this is set in the GetCoverageReport class -->
+	<LoggingServerFileName>ScreensandResponseTimes</LoggingServerFileName>
+</LoggerConfiguration>

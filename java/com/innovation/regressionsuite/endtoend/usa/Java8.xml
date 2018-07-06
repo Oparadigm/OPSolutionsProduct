@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regression"  verbose="4">
+	<listeners>
+       <listener class-name="com.innovation.listeners.RetryListener"/>
+        <listener class-name="com.innovation.listeners.TestListener"/>
+   </listeners>
+	<test name="base">
+	<parameter name="strBrowser" value="CHROME_HEADLESS"></parameter>
+	<parameter name="strEnvironmentName" value="Java8"/>
+	<parameter name="strEnvironmentBrand" value="Model Office"/>
+	<parameter name="strCompany" value="9990"/>
+	<parameter name="strRegionValue" value="USA"/>
+	<parameter name="strAgentType" value="Contracted agent"/>
+	<parameter name="srtProcessingBranch" value="9990-Elite Processing Branch"/>
+	<parameter name="strWritingCompany" value="Elite"/>
+	<parameter name="strBranch" value="Connecticut Central Branch"/>
+	<parameter name="strState" value="Connecticut"/>
+	<parameter name="strRiskType" value="Private passenger"/>
+	<parameter name="strClientState" value="CT"/>
+	<parameter name="strSubCompany" value="990"/>
+	<parameter name="strHomeLob" value="Elite - Homeowners (HOM)"/>
+	<parameter name="strAutoLob" value="Elite - Auto (ATO)"/>
+	<parameter name="strHomeRiskType" value="Dwelling fire"/>
+		<packages>
+			<package name="com.innovation.regression.base.*">
+				<include name="com.innovation.regression.base.common.regression" />
+				<include name="com.innovation.regression.base.policy.regression" />
+				<include name="com.innovation.regression.base.claims.regression" />
+			</package>
+		</packages>
+	</test>
+</suite> 
