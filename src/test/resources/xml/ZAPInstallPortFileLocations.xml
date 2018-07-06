@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZAPConfiguration>
+	<!-- This should match the port as defined in ZAP Options\ Local Proxies-->
+	<zapPort>8888</zapPort>
+	<!-- The ZAP.exe location on the local machine running the tests -->
+	<zapExecutableLocation>C:\\Program Files\\OWASP\\Zed Attack Proxy\\ZAP.exe</zapExecutableLocation>
+	<zapWorkingDirectory>C:\\Program Files\\OWASP\\Zed Attack Proxy</zapWorkingDirectory>	
+	<zapAddress>localhost</zapAddress>	
+	<!-- This must match the API Key as defined in ZAP Options\ API -->	
+	<zapAPIKey>ZAPAPIKey</zapAPIKey>
+	<!-- The application URL under test - needs to be passed in from Maven ideally -->	
+	<zapTarget>http://10.2.64.3:9080/</zapTarget>	
+	<!-- The path location for the XML and HTTP reports - may need to adjust the relative path -->		
+	<zapOutXMLReportPathName>C:\\Temp\ZAP Reports\\XMLreport_</zapOutXMLReportPathName>	
+	<zapOutHTMLReportPathName>C:\\Temp\ZAP Reports\\HTMLreport_</zapOutHTMLReportPathName>				
+</ZAPConfiguration>

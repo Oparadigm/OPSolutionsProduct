@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup>
+   <BaseDevelopment>
+      <DatabaseType>SQLServer</DatabaseType>
+      <ConnectionString>jdbc:sqlserver://WHIEUINSDEVSQL1:1433;databaseName=Insurer_Development_01</ConnectionString>
+      <UserName>insurer_developer_01</UserName>
+      <Password>#InsurerDeveloper01#</Password>
+   </BaseDevelopment>    
+   <BaseDailyDeploy>
+      <DatabaseType>SQLServer</DatabaseType>
+      <ConnectionString>jdbc:sqlserver://WHIEUINSDDSQL01:1433;databaseName=Insurer_DailyDeploy_01</ConnectionString>
+      <UserName>insurer_tester_01</UserName>
+      <Password>#InsurerTestingOnly#</Password>
+   </BaseDailyDeploy> 
+   <BaseSystemTest>
+      <DatabaseType>SQLServer</DatabaseType>
+      <ConnectionString>jdbc:sqlserver://WHIEUINSSYSSQL1;databaseName=Insurer_SystemTest_01</ConnectionString>
+      <UserName>insurer_tester_01</UserName>
+      <Password>#InsurerTestingOnly#</Password>
+   </BaseSystemTest>      
+   <OdinDB2>>
+       <DatabaseType>DB2</DatabaseType>
+      <ConnectionString>jdbc:db2://10.2.64.11:50000/ICDEVD1</ConnectionString>
+      <UserName>jasper</UserName>
+      <Password>jasper1</Password>
+   </OdinDB2>>   
+   <Thor>>
+       <DatabaseType>DB2</DatabaseType>
+      <ConnectionString>????</ConnectionString>
+      <UserName>????</UserName>
+      <Password>????</Password>
+   </Thor>>
+      <Athena>>
+       <DatabaseType>SQLServer</DatabaseType>
+      <ConnectionString>jdbc:sqlserver://52.31.34.80:1433;databaseName=IInsurer_System_Test</ConnectionString>
+      <UserName>jasper</UserName>
+      <Password>Sp1derman</Password>
+   </Athena>>
+   <sdlc03>>
+       <DatabaseType>SQLServer</DatabaseType>
+      <ConnectionString>jdbc:sqlserver://sdlc03.1insurer.cloud:1433/IInsurer_Daily_Build</ConnectionString>
+      <UserName>jasper</UserName>
+      <Password>Sp1derman</Password>
+   </sdlc03>> 
+    <Java8>>
+       <DatabaseType>SQLServer</DatabaseType>
+      <ConnectionString>jdbc:sqlserver://34.241.85.146:1433;databaseName=IInsurer_Support_76_2016</ConnectionString>
+      <UserName>jasper</UserName>
+      <Password>Sp1derman1</Password>
+   </Java8>> 
+   
+</Setup>
