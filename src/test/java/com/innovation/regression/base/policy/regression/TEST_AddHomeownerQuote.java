@@ -34,10 +34,7 @@ import com.innovation.pages.policy.pages.PolicyResidentialDetails;
 import com.innovation.pages.policy.pages.PolicyStartDetails;
 import com.innovation.pages.policy.pages.PolicySummary;
 
-/**
- * @author lushs- Regression test script covering UK Add Client and Add Policy
- *
- */
+
 
 public class TEST_AddHomeownerQuote extends DriverManager
 {

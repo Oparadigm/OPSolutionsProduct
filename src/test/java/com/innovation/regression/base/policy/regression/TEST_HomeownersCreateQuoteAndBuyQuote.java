@@ -34,10 +34,7 @@ import com.innovation.pages.policy.pages.PolicyResidentialDetails;
 import com.innovation.pages.policy.pages.PolicyStartDetails;
 import com.innovation.pages.policy.pages.PolicySummary;
 
-/**
- * @author Kamran Mahmood- Regression test script covering Quote to New Business Process with Buy option and one loss added within 3
- *         years, Update risk detail after buy and add additional coverage and then complete new business
- */
+
 
 public class TEST_HomeownersCreateQuoteAndBuyQuote extends DriverManager
 {

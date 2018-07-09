@@ -34,10 +34,7 @@ import com.innovation.pages.common.pages.ManageCorrespondence;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author alamq. Regression test script covering UK Add With-Policy Motor Claim for Theft Claim
- *
- */
+
 
 public class TEST_AddWithPolicyMotorTheftClaim extends DriverManager
 {

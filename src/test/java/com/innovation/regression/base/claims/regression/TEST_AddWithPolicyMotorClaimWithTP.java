@@ -38,11 +38,7 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author alamq. Regression test script covering UK Add With-Policy Motor Claim with TP Alamq - This script will trigger Insured
- *         Vehicle Damage feature. Added Estimate Details against repairer. Created Invoice and make Final Payment via Invoice
- *         Management Modified by Kamran
- */
+
 
 public class TEST_AddWithPolicyMotorClaimWithTP extends DriverManager
 {

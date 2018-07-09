@@ -30,10 +30,6 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author Rizwan. Regression test script to add UK With-Policy Homeowner Explosion Claim with a third party Rizwan - Enhanced test
- *         script as per feedback from Claims BA
- */
 
 public class TEST_AddWithPolicyHomeownerExplosionClaimWithTP extends DriverManager
 {

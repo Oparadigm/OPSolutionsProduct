@@ -25,9 +25,7 @@ import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 import com.innovation.pages.policy.pages.PolicyAgenDetails;
 import com.innovation.pages.policy.pages.PolicyAgentSearch;
 
-/*Regression script will create a company client and then assign it to as agent. Will enter Agent details with company, profile and license details 
- * 
- */
+
 
 public class TEST_AddAgentWithCompanyClientTest extends DriverManager
 {

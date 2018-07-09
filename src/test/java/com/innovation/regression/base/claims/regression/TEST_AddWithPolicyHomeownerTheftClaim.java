@@ -31,10 +31,6 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author alamq. Regression test script to add UK With-Policy Homeowner Theft Claim Rizwan - Enhanced test script as per feedback
- *         from Claims BA
- */
 
 public class TEST_AddWithPolicyHomeownerTheftClaim extends DriverManager
 {

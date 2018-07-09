@@ -28,11 +28,7 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author Rizwan. Regression test script covering UK Add No-Policy Homeowner Claim Rizwan - Enhanced test script as per feedback
- *         from Claims BA
- * 
- */
+
 
 public class TEST_AddNoPolicyHomeownerClaim extends DriverManager
 {

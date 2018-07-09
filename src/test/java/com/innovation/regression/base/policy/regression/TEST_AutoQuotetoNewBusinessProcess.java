@@ -33,10 +33,7 @@ import com.innovation.pages.policy.pages.PolicySummary;
 import com.innovation.pages.policy.pages.PolicyVehicleHub;
 import com.innovation.pages.policy.pages.QuoteSummary;
 
-/**
- * @author M.Tahir- Regression test script covering UK Add Client and Add Policy
- *
- */
+
 
 public class TEST_AutoQuotetoNewBusinessProcess extends DriverManager
 {

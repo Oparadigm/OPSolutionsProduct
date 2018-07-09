@@ -19,10 +19,7 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 import com.innovation.pages.policy.pages.PolicyClientSearch;
 
-/**
- * @author lushs
- *
- */
+
 
 public class TEST_VerifyAddIndividualClient extends DriverManager
 {

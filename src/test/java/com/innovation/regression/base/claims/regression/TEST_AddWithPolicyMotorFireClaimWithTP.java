@@ -37,10 +37,7 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author alamq. Regression test script covering UK Add With-Policy Motor Claim with TP for Fire Claim
- *
- */
+
 
 public class TEST_AddWithPolicyMotorFireClaimWithTP extends DriverManager
 {

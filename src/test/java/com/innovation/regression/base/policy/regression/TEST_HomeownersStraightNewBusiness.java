@@ -38,10 +38,7 @@ import com.innovation.pages.policy.pages.PolicyResidentialDetails;
 import com.innovation.pages.policy.pages.PolicyStartDetails;
 import com.innovation.pages.policy.pages.PolicySummary;
 
-/**
- * @author M.Tahir- Regression test script covering Straight New Business Process
- *
- */
+
 
 public class TEST_HomeownersStraightNewBusiness extends DriverManager
 {

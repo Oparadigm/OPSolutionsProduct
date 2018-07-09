@@ -23,9 +23,7 @@ import com.innovation.pages.policy.pages.PolicyCancellation;
 import com.innovation.pages.policy.pages.PolicyReinstatement;
 import com.innovation.pages.policy.pages.PolicySummary;
 
-/**
- * @author M.Tahir- Regression test script covering Amendments Flow
- */
+
 
 public class TEST_PolicyCancellationReinstatement extends DriverManager
 {

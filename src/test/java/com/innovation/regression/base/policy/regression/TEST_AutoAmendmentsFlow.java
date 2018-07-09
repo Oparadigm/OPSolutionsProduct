@@ -35,9 +35,7 @@ import com.innovation.pages.policy.pages.PolicyStartDetails;
 import com.innovation.pages.policy.pages.PolicySummary;
 import com.innovation.pages.policy.pages.PolicyVehicleHub;;
 
-/**
- * @author M.Tahir- Regression test script covering Amendments Flow
- */
+
 
 public class TEST_AutoAmendmentsFlow extends DriverManager
 {

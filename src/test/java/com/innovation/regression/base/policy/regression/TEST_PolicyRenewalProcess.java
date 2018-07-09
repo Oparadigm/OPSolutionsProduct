@@ -19,9 +19,6 @@ import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 import com.innovation.pages.policy.pages.PolicyRenewals;
 
-/**
- * @author M.Tahir- Regression test script covering Amendments Flow
- */
 
 public class TEST_PolicyRenewalProcess extends DriverManager
 {

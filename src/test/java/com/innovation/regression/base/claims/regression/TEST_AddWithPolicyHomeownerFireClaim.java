@@ -34,10 +34,6 @@ import com.innovation.pages.common.pages.LoginPage;
 import com.innovation.pages.common.pages.NavigationPanel;
 import com.innovation.pages.common.pages.PreviousSessionWorkItems;
 
-/**
- * @author alamq. Regression test script covering UK Add With-Policy Homeowner Fire Claim
- * @author alamq - Added payment flow to complete the flow Rizwan - Enhanced test script as per feedback from Claims BA
- */
 
 public class TEST_AddWithPolicyHomeownerFireClaim extends DriverManager
 {
