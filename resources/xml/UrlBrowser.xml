@@ -2,7 +2,7 @@
 <Setup>
    <BaseDevelopment>>
       <Browser>CHROME</Browser>
-      <URL>http://10.2.64.3:9080/Jasper/</URL>
+      <URL>https://www.phptravels.net/</URL>
       <Database>BaseDevelopment</Database>
    </BaseDevelopment>
    <BaseDailyDeploy>>
