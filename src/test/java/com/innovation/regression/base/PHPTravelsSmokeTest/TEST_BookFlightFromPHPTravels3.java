@@ -14,7 +14,7 @@ import com.innovation.pages.phptravels.pages.PHPTravels;
 
 
 
-public class TEST_BookFlightFromPHPTravels extends DriverManager {
+public class TEST_BookFlightFromPHPTravels3 extends DriverManager {
 	@Parameters({ "strBrowser", "strEnvironmentName" })
 	@Test
 	public void bookFlightFromPHPTravels(@Optional("CHROME") String strBrowser, @Optional("BaseDevelopment") String strEnvironmentName

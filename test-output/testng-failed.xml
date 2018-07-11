@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.innovation.regression.base.claims.regression.TEST_AddNoPolicyHomeownerClaim">
+      <class name="com.innovation.regression.base.PHPTravelsSmokeTest.TEST_BookFlightFromPHPTravels">
         <methods>
           <include name="closeDriverObjects"/>
-          <include name="addNoPolicyHomeownerClaim" invocation-numbers="0"/>
+          <include name="bookFlightFromPHPTravels" invocation-numbers="0"/>
           <include name="instantiateDriverObject"/>
           <include name="start"/>
           <include name="end"/>
         </methods>
-      </class> <!-- com.innovation.regression.base.claims.regression.TEST_AddNoPolicyHomeownerClaim -->
+      </class> <!-- com.innovation.regression.base.PHPTravelsSmokeTest.TEST_BookFlightFromPHPTravels -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

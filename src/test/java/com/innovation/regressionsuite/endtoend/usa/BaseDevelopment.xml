@@ -6,7 +6,7 @@
         <listener class-name="com.innovation.listeners.TestListener"/>
    </listeners>
 	<test name="base">
-	<parameter name="strBrowser" value="CHROME_HEADLESS"></parameter>
+	<parameter name="strBrowser" value="CHROME"></parameter>
 	<parameter name="strEnvironmentName" value="BaseDevelopment"/>
 	<parameter name="strEnvironmentBrand" value="Model Office"/>
 	<parameter name="strCompany" value="9990"/>
@@ -24,9 +24,9 @@
 	<parameter name="strHomeRiskType" value="Dwelling fire"/>
 		<packages>
 			<package name="com.innovation.regression.base.*">
-				<include name="com.innovation.regression.base.common.regression" />
-				<include name="com.innovation.regression.base.policy.regression" />
-				<include name="com.innovation.regression.base.claims.regression" />
+				<include name="com.innovation.regression.base.PHPTravelsSmokeTest" />
+				<exclude name="com.innovation.regression.base.policy.regression" />
+				<exclude name="com.innovation.regression.base.claims.regression" />
 			</package>
 		</packages>
 	</test>
